@@ -1,0 +1,20 @@
+@import "_head";
+@import "_basics";
+
+.certificate {
+  @include d-flex(center, center, column);
+  background-color: $white;
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 5rem 0;
+  }
+  div {
+    @include d-flex();
+    gap: 3rem;
+    flex-wrap: wrap;
+    img {
+      width: 16%;
+    }
+  }
+}

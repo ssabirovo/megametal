@@ -1,0 +1,26 @@
+.mainConteiner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.products {
+  width: 100%;
+  &_product {
+    background-color: $white;
+    width: 100%;
+    @include d-flex(space-between);
+    padding: 3rem;
+    img {
+      width: 10%;
+    }
+    &_counter {
+      @include d-flex;
+      gap: 2rem;
+      font-size: 3rem;
+      button{
+        background-color: transparent;
+      }
+    }
+  }
+}

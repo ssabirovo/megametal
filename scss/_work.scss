@@ -1,0 +1,26 @@
+.work {
+  @include d-flex(center, center, column);
+  background-color: $white;
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+  &_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+    div {
+      @include d-flex(space-between);
+      gap: 3rem;
+      img {
+        height: 10rem;
+        width: auto;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+}

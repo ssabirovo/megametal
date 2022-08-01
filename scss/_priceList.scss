@@ -1,0 +1,69 @@
+@import "_basics";
+@import "_head";
+
+.priceList {
+  width: 100%;
+  overflow: hidden;
+
+  &_sale {
+    @include d-flex;
+    background-color: $red;
+    color: $white;
+    gap: 2rem;
+    width: max-content;
+    overflow: scroll;
+    padding: 2rem 0;
+    position: relative;
+    left: 0px;
+    animation-name: priceList;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    p {
+      font-size: 2rem;
+      margin: 0;
+    }
+  }
+  &_table {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-color: #eeeaea;
+    table {
+      thead {
+        background-color: $main-color;
+        font-weight: 600;
+        font-size: 1.8rem;
+        tr {
+          th {
+            padding: 2rem 1rem;
+          }
+        }
+      }
+      tbody {
+        font-weight: 500;
+        font-size: 16px;
+        background-color: $white;
+        tr {
+          td {
+            padding: 3rem 1rem;
+            button {
+              @include btn($red, $white);
+              &:hover {
+                color: $red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &_seeMore {
+    @include d-flex;
+
+    button {
+      @include btn;
+      font-size: 2.4rem;
+      padding: 1rem 4rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

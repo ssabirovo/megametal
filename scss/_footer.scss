@@ -1,0 +1,47 @@
+.footer {
+  @include d-flex(center, center, column);
+  width: 100%;
+  background-color: $black;
+  color: $white;
+  &_content {
+    @include d-flex(space-between);
+    width: 100%;
+    img {
+      width: 20%;
+    }
+    &_links {
+      @include d-flex;
+      gap: 3rem;
+      a {
+        @include d-flex(center, center, column);
+        cursor: pointer;
+        gap: 1rem;
+        transition: 0.1s linear;
+        &:hover {
+          transform: translate(0, -10px);
+        }
+        i {
+          font-size: 3rem;
+        }
+      }
+    }
+    &_phone {
+      @include d-flex(center, end, column);
+      p {
+        font-weight: 500;
+        color: $grey;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  &_footer {
+    @include d-flex(space-between);
+    width: 100%;
+    p {
+      font-size: 1.4rem;
+    }
+    &_hidden {
+      visibility: hidden;
+    }
+  }
+}

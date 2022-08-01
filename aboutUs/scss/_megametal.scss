@@ -1,0 +1,26 @@
+.megametal {
+  @include d-flex;
+  width: 100%;
+  gap: 3rem;
+  &_video {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+  &_text {
+    width: 50%;
+    h1 {
+      font-weight: 500;
+      font-size: 5rem;
+      text-align: center;
+    }
+    p {
+      font-weight: 500;
+      font-size: 1.8rem;
+    }
+  }
+}
+.reverse {
+  flex-direction: row-reverse;
+}

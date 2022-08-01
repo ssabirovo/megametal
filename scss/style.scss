@@ -1,0 +1,110 @@
+@import "_head";
+@import "_basics";
+@import "./navbar";
+@import "./header";
+@import "./priceList";
+@import "./work";
+@import "./partners";
+@import "./certificate";
+@import "./apply";
+@import "./workspace";
+@import "./footer";
+
+// media
+@media (max-width: 1200px) {
+  html {
+    font-size: 55% !important;
+  }
+  section {
+    padding: 3rem 5% !important;
+  }
+}
+@media (max-width: 991px) {
+  section {
+    padding: 3rem 2rem !important;
+  }
+}
+@media (max-width: 910px) {
+  .nav {
+    .navbar {
+      &_info {
+        &_content {
+          display: none;
+        }
+      }
+      &_btn {
+        display: none;
+      }
+      &_icons {
+        &_bars {
+          display: block;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  .navbarAnchors {
+    display: none;
+  }
+  .productCatalog_content {
+    flex-direction: column-reverse;
+    &_catalog {
+      width: 100%;
+      a {
+      }
+    }
+    &_carousel {
+      width: 100%;
+    }
+  }
+  .apply_inputs {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 783px) {
+}
+@media (max-width: 660px) {
+  .hidden {
+    display: none;
+  }
+  .work {
+    &_content {
+      grid-template-columns: 1fr;
+      &_step {
+        padding: 0 2rem;
+        gap: 0rem;
+        justify-content: start;
+      }
+    }
+  }
+
+  .footer_content {
+    flex-direction: column;
+    gap: 2rem;
+    &_phone {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+  .footer_footer {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav {
+    padding: 2rem 9%;
+  }
+  .section {
+    padding: 0 !important;
+  }
+  html {
+    font-size: 50% !important;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 40% !important;
+  }
+}

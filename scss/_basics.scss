@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+$main-color: #fbba00;
+$black: #000;
+$grey: #8f95a5;
+$red: #e31837;
+$white: #fff;
+$bg-color: #eeeaea;
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 4rem;
+}
+@mixin btn($bg-color: $main-color, $text-color: $black) {
+  background-color: $bg-color;
+  padding: 1rem 1rem;
+  color: $text-color;
+  border: 1px solid $bg-color;
+  transition: 0.2s linear;
+  &:hover {
+    background-color: transparent;
+    color: $text-color;
+  }
+}
+@mixin d-flex($j-s: center, $a-i: center, $f-d: row) {
+  display: flex;
+  justify-content: $j-s;
+  align-items: $a-i;
+  flex-direction: $f-d;
+}
+%f-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+@keyframes priceList {
+  0% {
+    
+  }
+
+  50% {
+    left: -310px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}

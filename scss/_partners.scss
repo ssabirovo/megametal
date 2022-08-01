@@ -1,0 +1,28 @@
+@import "_basics";
+
+.pertners {
+  @include d-flex(center, center, column);
+  padding: 5rem 0;
+  padding-bottom: 10rem;
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 5rem 0;
+  }
+  div {
+    display: flex;
+
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+    // left: 210px;
+    // animation-name: priceList;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    img {
+      width: 30%;
+    }
+  }
+}

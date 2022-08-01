@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black and White</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section class="nav">
+      <img class="nav_img" src="./images/Group-41.svg" alt="" />
+      <div class="navbar">
+        <div class="navbar_info">
+          <div class="navbar_info_content">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h1>+998 (99) 265-99-99</h1>
+              <h2>отдел продаж</h2>
+            </div>
+          </div>
+          <div class="navbar_info_content">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h1>info@megametal</h1>
+              <h2>по всем вопросам</h2>
+            </div>
+          </div>
+        </div>
+        <button class="navbar_btn">Оформить заказ</button>
+        <div class="navbar_icons">
+          <div class="navbar_icons_container">
+            <i class="fa-solid fa-cart-shopping navbar_icons_cart"></i>
+            <p style="position: absolute">1</p>
+          </div>
+
+          <i class="fa-solid fa-bars navbar_icons_bars"></i>
+        </div>
+      </div>
+    </section>
+    <section class="navbarAnchors">
+      <div class="navbarAnchors_bars">
+        <i class="fa-solid fa-bars navbar_icons_bars"></i>
+        <a>Каталог продукции</a>
+      </div>
+      <a>О компании</a>
+      <a>Прайс лист</a>
+      <a>Анализ рынка</a>
+      <a>Акции</a>
+    </section>
+
+    <section class="productCatalog">
+      <div class="productCatalog_content">
+        <div class="productCatalog_content_catalog">
+          <a href="#">
+            <img src="./images/image-64.svg" alt="" />
+            <p>Арматура</p>
+          </a>
+          <a href="#">
+            <img src="./images/image-64.svg" alt="" />
+            <p>Арматура композитная</p>
+          </a>
+          <a href="#">
+            <img src="./images/image-56.svg" alt="" />
+            <p>Балка двутавровая</p>
+          </a>
+          <a href="#">
+            <img src="./images/image-58.svg" alt="" />
+            <p>Квадрат</p>
+          </a>
+          <a href="#">
+            <img src="./images/image-65.svg" alt="" />
+            <p>Листовый прокат</p>
+          </a>
+          <a href="#">
+            <img src="./images/image-66.svg" alt="" />
+            <p>Уголок</p>
+          </a>
+          <a href="#">
+            <img src="./images/image-67.svg" alt="" />
+            <p>Сетка</p>
+          </a>
+          <a href="#">
+            <img src="./images/image-68.svg" alt="" />
+            <p>Труба профильная</p>
+          </a>
+          <a href="#">
+            <img src="./images/image-69.svg" alt="" />
+            <p>Труба ВГП</p>
+          </a>
+          <a href="#">
+            <img src="./images/image-70.svg" alt="" />
+            <p>Швеллер</p>
+          </a>
+          <a href="#">
+            <img src="./images/image-71.svg" alt="" />
+            <p>Проволка</p>
+          </a>
+          <a href="#">
+            <img src="./images/image-72.svg" alt="" />
+            <p>Прут</p>
+          </a>
+        </div>
+        <!-- w-25 tugillash kere -->
+        <div class="productCatalog_content_carousel">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="true"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/carouselPhoto.png"
+                  class="d-block"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/carouselPhoto.png"
+                  class="d-block"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/carouselPhoto.png"
+                  class="d-block"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- priceList -->
+
+    <div class="priceList">
+      <div class="priceList_sale">
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+      </div>
+      <section class="priceList_table row">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="col">Название</th>
+              <th class="col hidden">Размер</th>
+              <th class="col hidden">Длина</th>
+              <th class="col">Норма</th>
+              <th class="col">Цена</th>
+              <th class="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Арматура A400 Гулистон</td>
+              <td class="hidden">ф 12</td>
+              <td class="hidden">11,70</td>
+              <td>1 тонна = 1258 метр</td>
+              <td>10 000 000 сум</td>
+              <td><button>Купить</button></td>
+            </tr>
+            <tr>
+              <td>Арматура A400 Гулистон</td>
+              <td class="hidden">ф 12</td>
+              <td class="hidden">11,70</td>
+              <td>1 тонна = 1258 метр</td>
+              <td>10 000 000 сум</td>
+              <td><button>Купить</button></td>
+            </tr>
+            <tr>
+              <td>Арматура A400 Гулистон</td>
+              <td class="hidden">ф 12</td>
+              <td class="hidden">11,70</td>
+              <td>1 тонна = 1258 метр</td>
+              <td>10 000 000 сум</td>
+              <td><button>Купить</button></td>
+            </tr>
+            <tr>
+              <td>Арматура A400 Гулистон</td>
+              <td class="hidden">ф 12</td>
+              <td class="hidden">11,70</td>
+              <td>1 тонна = 1258 метр</td>
+              <td>10 000 000 сум</td>
+              <td><button>Купить</button></td>
+            </tr>
+            <tr>
+              <td>Арматура A400 Гулистон</td>
+              <td class="hidden">ф 12</td>
+              <td class="hidden">11,70</td>
+              <td>1 тонна = 1258 метр</td>
+              <td>10 000 000 сум</td>
+              <td><button>Купить</button></td>
+            </tr>
+            <tr>
+              <td>Арматура A400 Гулистон</td>
+              <td class="hidden">ф 12</td>
+              <td class="hidden">11,70</td>
+              <td>1 тонна = 1258 метр</td>
+              <td>10 000 000 сум</td>
+              <td><button>Купить</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="priceList_seeMore">
+        <button>Посмотреть еще</button>
+      </section>
+      <div class="priceList_sale">
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+        <p>МЕГА СКИДКИ!</p>
+      </div>
+    </div>
+    <!-- Как мы работаем -->
+    <section class="work">
+      <h1>Как мы работаем</h1>
+      <div class="work_content">
+        <div class="work_content_step">
+          <img src="./images/1.svg" alt="" />
+          <p>Вы звоните нам или оставляете заявку на сайте</p>
+        </div>
+        <div class="work_content_step">
+          <img src="./images/2.svg" alt="" />
+          <p>Вы получаете всю подробную информацию</p>
+        </div>
+        <div class="work_content_step">
+          <img src="./images/3.svg" alt="" />
+          <p>Наш менеджер высылает Вам коммерческое предложение</p>
+        </div>
+        <div class="work_content_step">
+          <img src="./images/4.svg" alt="" />
+          <p>Заключаем договор и приступаем к работе</p>
+        </div>
+      </div>
+    </section>
+    <!-- Наши партнёры -->
+    <div class="pertners">
+      <h1>Наши партнёры</h1>
+      <div class="pertners_content">
+        <img src="./images/Tashkent_City_logo.png" alt="" />
+        <img src="./images/golden.png" alt="" />
+        <img src="./images/Tashkent_City_logo.png" alt="" />
+        <img src="./images/golden.png" alt="" />
+        <img src="./images/Tashkent_City_logo.png" alt="" />
+        <img src="./images/golden.png" alt="" />
+        <img src="./images/Tashkent_City_logo.png" alt="" />
+        <img src="./images/golden.png" alt="" />
+        <img src="./images/Tashkent_City_logo.png" alt="" />
+        <img src="./images/golden.png" alt="" />
+        <img src="./images/Tashkent_City_logo.png" alt="" />
+        <img src="./images/golden.png" alt="" />
+        <img src="./images/Tashkent_City_logo.png" alt="" />
+        <img src="./images/golden.png" alt="" />
+      </div>
+    </div>
+
+    <!-- Сертификаты -->
+    <section class="certificate">
+      <h1>Сертификаты</h1>
+      <div>
+        <img src="./images/document1.png" alt="" />
+        <img src="./images/document2.png" alt="" />
+        <img src="./images/document3.png" alt="" />
+        <img src="./images/document4.png" alt="" />
+      </div>
+    </section>
+    <!-- Оставить заявку -->
+    <section class="apply">
+      <h2>Оставить заявку можно тут</h2>
+      <div class="apply_inputs">
+        <div class="apply_inputs_left">
+          <div class="apply_inputs_left_content">
+            <p>Как к вам обращаться?</p>
+            <input type="text" placeholder="Имя" />
+          </div>
+          <div class="apply_inputs_left_content">
+            <p>Введите вашу почту</p>
+            <input type="email" placeholder="E-mail" />
+          </div>
+          <div class="apply_inputs_left_content">
+            <p>Введите телефон</p>
+            <input type="text" placeholder="+ 998 (__) ___ - __ - __ " />
+          </div>
+        </div>
+        <div class="apply_inputs_right">
+          <p>Мы вас слушаем</p>
+          <textarea
+            name=""
+            placeholder="Напишите что-нибудь"
+            id=""
+            cols="50"
+            rows="12"
+            aria-setsize=""
+          ></textarea>
+        </div>
+      </div>
+      <button>ОТПРАВИТЬ</button>
+    </section>
+
+    <!-- Рабочее простарнство -->
+
+    <section class="workspace">
+      <h1>Рабочее простарнство</h1>
+      <div class="workspace_images">
+        <img src="./images/Rectangle-73.png" alt="" />
+        <img src="./images/image-37.png" alt="" />
+      </div>
+      <div class="workspace_btns">
+        <button><i class="fa-solid fa-chevron-left"></i></button>
+        <button><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer_content">
+        <img src="./images/Mega-Metal-Logo_2 6.svg" alt="" />
+        <div class="footer_content_links">
+          <a>
+            <i class="fa-brands fa-telegram"></i>
+            <p>Telegram</p>
+          </a>
+          <a>
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>WhatsApp</p>
+          </a>
+          <a>
+            <i class="fa-brands fa-viber"></i>
+            <p>Viber</p>
+          </a>
+          <a>
+            <i class="fa-brands fa-skype"></i>
+            <p>Skype</p>
+          </a>
+        </div>
+        <div class="footer_content_phone">
+          <h2>+998 (99) 999-99-99</h2>
+          <p>Отдел продаж</p>
+        </div>
+      </div>
+      <div class="footer_footer">
+        <p>Политика конфиденциальности</p>
+        <p>Пользовательское соглашение</p>
+        <p class="footer_footer_hidden">Пользовательское соглашение</p>
+      </div>
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

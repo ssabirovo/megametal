@@ -1,0 +1,111 @@
+.nav {
+  @include d-flex(space-between);
+  padding: 2rem 9%;
+  width: 100%;
+  background-color: #fff;
+  height: max-content;
+  border-bottom: 1px solid #d8d6d6;
+  &_img {
+    width: 11%;
+    height: auto;
+  }
+  .navbar {
+    @include d-flex(end);
+    gap: 3rem;
+    width: 87%;
+
+    &_info {
+      @include d-flex();
+      gap: 2rem;
+      &_content {
+        @include d-flex();
+        gap: 2rem;
+        width: 27rem;
+
+        i {
+          font-size: 3rem;
+          color: $main-color;
+          transition: 0.2s linear;
+          padding: 0.5rem;
+          &:hover {
+            color: $red;
+          }
+        }
+        h1 {
+          font-weight: 500;
+          font-size: 1.8rem;
+        }
+        h2 {
+          @include d-flex;
+          font-weight: 400;
+          font-size: 1.7rem;
+          color: $grey;
+          width: 100%;
+          line-height: 1.5rem;
+        }
+      }
+    }
+    &_btn {
+      @include btn;
+      @include d-flex;
+      transition: 0.2s linear;
+      font-size: 1.4rem;
+      border: 1px solid $main-color;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    &_icons {
+      @include d-flex;
+      gap: 3rem;
+      &_container {
+        position: relative;
+        p {
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          background-color: $red;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 420px;
+          color: $white;
+          @include d-flex;
+        }
+      }
+      &_cart {
+        font-size: 3rem;
+        transition: 0.2s linear;
+        &:hover {
+          color: $red;
+        }
+      }
+      &_bars {
+        display: none;
+        font-size: 3.5rem;
+        transition: 0.2s linear;
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+.navbarAnchors {
+  @include d-flex(space-between);
+  font-size: 1.4rem;
+  background-color: #fff;
+  height: 11vh;
+  a {
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  &_bars {
+    @include d-flex;
+    gap: 1rem;
+    i {
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+  }
+}

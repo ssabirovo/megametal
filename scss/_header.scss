@@ -1,0 +1,39 @@
+@import "_basics";
+@import "_head";
+
+.productCatalog {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.productCatalog_content {
+  background-color: $white;
+  @include d-flex(space-between);
+  width: 100%;
+  height: max-content;
+
+  &_catalog {
+    @include d-flex(center, start, column);
+    width: 25%;
+    a {
+      @include d-flex(start);
+      padding: 0.5rem 1rem;
+      gap: 2rem;
+      text-decoration: none;
+      width: 100%;
+      &:hover {
+        background-color: $main-color;
+      }
+      img {
+        width: 3rem;
+      }
+      p {
+        font-size: 1.5rem;
+        color: $black;
+        transform: translate(0, 0.3rem);
+      }
+    }
+  }
+  &_carousel {
+    width: 75%;
+  }
+}

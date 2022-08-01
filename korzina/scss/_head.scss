@@ -1,0 +1,20 @@
+@import "_basics";
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  background-color: #eeeaea;
+}
+html {
+  font-size: 62.5% !important;
+  //   overflow-x: hidden;
+}
+section {
+  padding: 3rem 9% !important;
+}
